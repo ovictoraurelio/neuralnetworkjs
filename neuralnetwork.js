@@ -2,7 +2,8 @@
   * @author Victor Aurélio
   * @since 12-02-2016
 
-  - Exclusivamente para redes com um neuronio de saída.  
+  - Exclusively for networks with an output neuron.
+  - LogSig function in use
 **/
 module.exports.NeuralNetwork = function(data){
   for(property in data){
@@ -10,7 +11,7 @@ module.exports.NeuralNetwork = function(data){
   }
 };
 module.exports.NeuralNetwork.prototype = {      
-    values: [4.3,3.3,3.6],
+    values: [],
     result: null,  
     weights: {
       hiddenLayer: [],
@@ -77,5 +78,3 @@ module.exports.NeuralNetwork.prototype = {
       return result;
     }
 };
-
-/*module.exports.NeuralNetwork = function(o){ return NeuralNetwork(o); };*/
